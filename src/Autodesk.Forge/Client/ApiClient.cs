@@ -296,7 +296,7 @@ namespace Autodesk.Forge.Client
         /// <param name="response">The HTTP response.</param>
         /// <param name="type">Object type.</param>
         /// <returns>Object representation of the JSON string.</returns>
-        public /*object*/dynamic Deserialize(IRestResponse response, Type type, bool asType = true)
+        public /*object*/dynamic Deserialize(IRestResponse response, Type type, bool asType = false)
         {
             IList<Parameter> headers = response.Headers;
             if (type == typeof(byte[])) // return byte array
